@@ -1,0 +1,50 @@
+[
+  {
+    "ContainingType": "GestionEquipement.Controllers.EquipementController",
+    "Method": "AddEquipement",
+    "RelativePath": "api/Equipement/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "GestionEquipement.DTO.EquipementDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionEquipement.Controllers.PiecesController",
+    "Method": "Add",
+    "RelativePath": "api/Pieces/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "GestionEquipement.DTO.AddPieceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GestionEquipement.Controllers.PiecesController",
+    "Method": "GetPiecesWithEquipements",
+    "RelativePath": "api/Pieces/with-equipements/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

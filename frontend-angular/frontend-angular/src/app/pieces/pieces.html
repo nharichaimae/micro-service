@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <div class="logo">Gestion Pièces</div>
+  <ul>
+  <li><a (click)="goTo('dashboard')">Dashboard</a></li>
+    <li><a (click)="goTo('pieces')">Pièces</a></li>
+    <li class="logout"><a (click)="logout()">Déconnexion</a></li>
+  </ul>
+</nav>
+<div class="add-piece-container">
+  <h2><i class="fa fa-cube"></i> Ajouter une Pièce</h2>
+
+  <div class="form-group">
+    <input [(ngModel)]="name" placeholder="Nom de la pièce" />
+  </div>
+
+  <button (click)="add()" class="btn-add">
+    <i class="fa fa-plus"></i> Ajouter
+  </button>
+</div>

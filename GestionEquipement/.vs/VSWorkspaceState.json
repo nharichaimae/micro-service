@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\GestionEquipement",
+    "\\GestionEquipement\\Controllers",
+    "\\GestionEquipement\\DTO",
+    "\\GestionEquipement\\Mappers",
+    "\\GestionEquipement\\Models"
+  ],
+  "SelectedNode": "\\GestionEquipement\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

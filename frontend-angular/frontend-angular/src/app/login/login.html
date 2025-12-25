@@ -1,0 +1,17 @@
+<div class="login-container">
+  <div class="login-card">
+    <h2>Connexion Smart Home</h2>
+
+    <div class="input-group">
+      <i class="fas fa-envelope"></i>
+      <input type="email" [(ngModel)]="email" placeholder="Email">
+    </div>
+
+    <div class="input-group">
+      <i class="fas fa-lock"></i>
+      <input type="password" [(ngModel)]="password" placeholder="Mot de passe">
+    </div>
+
+    <button (click)="login()">Se connecter</button>
+  </div>
+</div>

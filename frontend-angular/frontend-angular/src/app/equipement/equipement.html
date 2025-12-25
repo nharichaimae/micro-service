@@ -1,0 +1,36 @@
+<!-- equipement.html -->
+<nav class="navbar">
+  <div class="logo">Gestion Équipements</div>
+  <ul>
+    <li><a (click)="goTo('dashboard')">Dashboard</a></li>
+    <li><a (click)="goTo('pieces')">Pièces</a></li>
+    <li class="logout"><a (click)="logout()">Déconnexion</a></li>
+  </ul>
+</nav>
+
+<div class="form-container">
+  <form (ngSubmit)="ajouter()">
+    <div class="input-group">
+      <span class="icon">🛠️</span>
+      <input
+        type="text"
+        [(ngModel)]="equipement.nom"
+        name="nomEquipement"
+        placeholder="Nom équipement"
+        required
+      >
+    </div>
+
+    <div class="input-group">
+      <span class="icon">📝</span>
+      <input
+        type="text"
+        [(ngModel)]="equipement.description"
+        name="descriptionEquipement"
+        placeholder="Description"
+      >
+    </div>
+
+    <button type="submit">Ajouter</button>
+  </form>
+</div>

@@ -1,0 +1,30 @@
+<header class="navbar">
+  <div class="logo">Smart Home</div>
+  <nav>
+    <button class="btn btn-add" (click)="goTo('/pieces')">
+      <i class="fa fa-plus"></i> Ajouter Pièce
+    </button>
+    <button class="btn btn-logout" (click)="logout()">
+      <i class="fa fa-sign-out-alt"></i> Déconnexion
+    </button>
+  </nav>
+</header>
+
+<main class="dashboard-content">
+  <h1>Mes Pièces</h1>
+
+  <div class="pieces-list">
+    <div *ngFor="let piece of pieces" class="piece-card">
+      <h2><i class="fa fa-home"></i> {{ piece.name }}</h2>
+
+      <ul>
+        <li *ngFor="let eq of piece.equipements || []" 
+              [ngClass]="{'on': eq.etat==='ON','off': eq.etat==='OFF'}">
+            <i class="fa fa-lightbulb"></i>
+            <strong>{{ eq.nom }}</strong> - {{ eq.description }} - <em>{{ eq.etat }}</em>
+          </li>
+
+      </ul>
+    </div>
+  </div>
+</main>

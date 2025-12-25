@@ -1,0 +1,113 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #4a90e2, #9b59b6);
+  padding: 10px 20px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+.navbar ul li a:hover {
+  opacity: 0.7;
+}
+
+/* Form container */
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f5f6fa;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input with icon */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.input-group .icon {
+  padding: 10px;
+  background: #4a90e2;
+  color: white;
+  font-size: 18px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-group input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Button */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(90deg, #4a90e2, #9b59b6);
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #357ab8, #8e44ad);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .form-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
